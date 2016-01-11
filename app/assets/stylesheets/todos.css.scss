@@ -1,0 +1,135 @@
+// Place all the styles related to the todos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: rgba(0, 0, 0, 0.03);
+}
+.container{
+
+  font-family: 'Roboto', sans-serif;
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 100px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,.2);
+  border-radius: 3px;
+  background: white;
+}
+.addbuttoncontainer{
+  padding: 20px;
+  text-align: center;
+
+  /*border-top: solid 1px rgba(0, 0, 0, 0.1);;*/
+}
+button{
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+  background: none;
+}
+.addbutton{
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1.2;
+  background: #3A96CE;
+  color: white;
+}
+.confirmButton{
+  background: rgba(209, 7, 0, 0.17);;
+  width: 50px;
+  text-align: center;
+  height: 60px;
+  padding: 20px;
+  outline: none;
+}
+.cancelButton{
+  width: 50px;
+  text-align: center;
+  height: 60px;
+  padding: 20px;
+  outline: none;
+}
+.deleteButton{
+  width: 50px;
+  float: right;
+  text-align: center;
+  height: 60px;
+  padding: 20px;
+  outline: none;
+}
+.deleteFunction{
+  width: 100px;
+  float: right;
+}
+
+.note-list {
+
+}
+.note-list a{
+  text-decoration: none;
+}
+.note-summary {
+    border-bottom: dashed 1px rgba(0, 0, 0, 0.1);
+    font-weight: 300;
+    padding: 20px;
+    color: #013A6D;
+    height: 60px;
+}
+/*.note-summary:first-child{
+    border-top: none;
+}*/
+.border-bottom{
+  border-bottom: dashed 1px rgba(0, 0, 0, 0.1);
+}
+.note-selected{
+  background: #F2FAFF;
+}
+.todo-input{
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #013A6D;
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  padding: 20px;
+  width: 400px;
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .confirmButton{
+    width: 50%;
+  }
+  .deleteButton{
+    width: 50%;
+  }
+  .cancelButton{
+    width: 50%;
+  }
+  .todo-input{
+    width: 70%;
+  }
+  .deleteFunction{
+    width: 30%;
+  }
+}
